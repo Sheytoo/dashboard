@@ -1,0 +1,122 @@
+{
+  "client": {
+    "host": "0.0.0.0"
+  },
+  "server": {
+    "current_time": 1234567890,
+    "services": [
+      {
+        "name": "weather",
+        "widgets": [
+          {
+            "name": "current_weather_city",
+            "description": "Current weather in a city",
+            "params": [
+              {
+                "name": "city",
+                "type": "string"
+              },
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "forecast_weather_city",
+            "description": "Forecast weather in a city",
+            "params": [
+              {
+                "name": "city",
+                "type": "string"
+              },
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "steam",
+        "widgets": [
+          {
+            "name": "last_played_game",
+            "description": "Last played game",
+            "params": [
+              {
+                "name": "steam_id",
+                "type": "string"
+              },
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          },
+          {
+            "name": "lookup_steam_id",
+            "description": "Lookup steam id",
+            "params": [
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "crypto",
+        "widgets": [
+          {
+            "name": "current_crypto_price",
+            "description": "Current price of a crypto currency",
+            "params": [
+              {
+                "name": "crypto_currency",
+                "type": "string"
+              },
+              {
+                "name": "currency",
+                "type": "string"
+              },
+              {
+                "name": "days",
+                "type": "number"
+              },
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "flight",
+        "widgets": [
+          {
+            "name": "flight_status",
+            "description": "Flight status",
+            "params": [
+              {
+                "name": "flight_number",
+                "type": "string"
+              },
+              {
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "name": "refresh_interval",
+                "type": "number"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
